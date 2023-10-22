@@ -24,9 +24,9 @@ IS_SUCCESSFUL—Was the money used effectively
 
 ***
 ## File structure
-- __Code:__ contains images of the plots and background for readme file
-- __Resources:__ Contains app.js file with completed code for bonus activity
-- __README.md:__ ReadMe file, you're already here
+- __Code:__ Contains initial model and optimization model code
+- __Resources:__ Contains image files for readme and h5 files
+- __README.md:__ ReadMe file including instructions and _Report_
 
 ***
 ## Tools
@@ -49,9 +49,7 @@ _Step 3._ Optimize your model in order to achieve a target predictive accuracy h
     
 _Step 4._. Write a report on the performance of the deep learning model you created for AlphabetSoup
 
- 
- <img width="321" alt="gauge_chart" src="https://github.com/Tarynfo1/belly-button-challenge/blob/392a69e46dcbf6a7225bef728568b1e3a9326be7/Images/gauge_chart.png">
- 
+
 
 ***
 ## Report <br>
@@ -73,7 +71,7 @@ After applying the neural networks, there were 3 layers of each of the models. T
 <img width="321" alt="layers" src="https://github.com/Tarynfo1/deep-learning-challenge/blob/93f19fb58d6f909f8219301b513a036b9659d861/Resources/layers1.png"><br><br>
 
 477 parameters were created by a three-layer training model, the first try show accuracy just above 73%, sitting just under 75%:
-<img width="321" alt="layers" src="https://github.com/Tarynfo1/deep-learning-challenge/blob/93f19fb58d6f909f8219301b513a036b9659d861/Resources/Results73.png"><br><br>
+<img width="321" alt="results73" src="https://github.com/Tarynfo1/deep-learning-challenge/blob/93f19fb58d6f909f8219301b513a036b9659d861/Resources/Results73.png"><br><br>
 
 
 ### Optimization results
@@ -81,38 +79,5 @@ After applying the neural networks, there were 3 layers of each of the models. T
 The optimisation performance included the NAME column included in the dataset and achieved an accuracy of 79% percent which is _4% over the target_ with 3298 parameters.
 <img width="321" alt="results79" src="https://github.com/Tarynfo1/deep-learning-challenge/blob/93f19fb58d6f909f8219301b513a036b9659d861/Resources/results79.png"><br><br>
 
-
-
-## Acknowledgements
-- https://plotly.com/python/reference/indicator/#indicator-gauge-axis-dtick assisted in the following code snippet
-```
-          gauge: {
-              axis: {range: [0,10], tickmode: "linear", tick0: 2, dtick: 2}, 
-              bar: {color: "rgba(14, 127, 0, .5)"},
-```
-
-- Reference from https://www.d3indepth.com/requests/ assisted in the following code snippet
-```
-// // Fetch the JSON data and console log it
-d3.json(url).then(function(data){
-    console.log(data);
-});
-```  
-
-- Reference https://plotly.com/python/v3/gauge-charts/ assisted in the following code snippet
-```
-// Assign the first object to obj variable
-      let obj = filteredData[0]
-      console.log(obj)
-      // Trace for the data for the gauge chart
-      let trace = [{
-          domain: { x: [0, 1], y: [0, 1] },
-          value: obj.wfreq,
-          title: { text: "<b>Belly Button Washing Frequency</b><br>Scrubs per Week", font: {size: 24}},
-          type: "indicator", 
-          mode: "gauge+number",
-          gauge: {
-              axis: {range: [0,10], tickmode: "linear", tick0: 2, dtick: 2}, 
-              bar: {color: "rgba(14, 127, 0, .5)"},
-              steps: [
-```
+### Recommendation
+Given that multiple layers learn how to predict and classify information based on filtering inputs through layers, it is recommended to use them for deep learning models.
