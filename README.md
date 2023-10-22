@@ -60,7 +60,7 @@ _Step 4._. Write a report on the performance of the deep learning model you crea
 
 Tasked with creating an algorithm to predict if applicants for funding will be successful for the not-for-profit organisation, Alphabet Soup - features provided in the dataset were used to create binary classifiers that are capable of rpedicting whether applicants will be successful in their funding applications.
 
-### Results
+### Data Preprocessing
 
 To start, data was cleansed to remove information that was not relevant, which was EIN and NAME, the remaining columns were to be the considered features of the model. For binning purposes, name was added back in the second test. The data was then split for training and testing set. The target variable used for the model is labeled 'IS_SUCCESSFUL" and has the value of 1 for yes and 0 for no. Thne, the APPLICATION data was analysed and the "CLASSIFICATION" value was used for binning. Several data points were used as a cut off to bin "rare" variables together with the new value of "Other" for the unique values. Categorical variables were encoded by get_dummies() after checking to see if the binning was successful.
 
@@ -71,13 +71,13 @@ After applying the neural networks, there were 3 layers of each of the models. T
 
 <img width="360" alt="layers" src="https://github.com/Tarynfo1/deep-learning-challenge/blob/93f19fb58d6f909f8219301b513a036b9659d861/Resources/layers1.png"><br><br>
 
-477 parameters were created by a three-layer training model, the first try show accuracy just above 73%, sitting just under 75%:<br>
+477 parameters were created by a three-layer training model, the first try show accuracy just above _73%_, sitting just under 75%:<br>
 <img width="360" alt="results73" src="https://github.com/Tarynfo1/deep-learning-challenge/blob/93f19fb58d6f909f8219301b513a036b9659d861/Resources/Results73.png"><br><br>
 
 
-### Optimization results
+### Summary
 
-The optimisation performance included the NAME column included in the dataset and achieved an accuracy of 79% percent which is _4% over the target_ with 3298 parameters.<br>
+The optimisation performance included the NAME column included in the dataset and achieved an accuracy of _79%_ which is _4% over the target_ with 3298 parameters.<br>
 
 
 <img width="360" alt="results79" src="https://github.com/Tarynfo1/deep-learning-challenge/blob/93f19fb58d6f909f8219301b513a036b9659d861/Resources/results79.png"><br><br>
