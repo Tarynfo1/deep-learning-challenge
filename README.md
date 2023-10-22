@@ -30,9 +30,10 @@ IS_SUCCESSFUL—Was the money used effectively
 
 ***
 ## Tools
-- Plotly
-- D3 library
-- Javascript
+- Pandas
+- ScikitLearn
+- TensorFlow
+- h5
 ***
 ## Instructions<br>
 _Step 1._ Using your knowledge of Pandas and the Scikit-Learn’s StandardScaler(), you’ll need to preprocess the dataset in order to compile, train, and evaluate the neural network model later in Step 2   
@@ -68,16 +69,18 @@ To start, data was cleansed to remove information that was not relevant, which w
 
 After applying the neural networks, there were 3 layers of each of the models. The number of hidden nodes depended on the number of features (see below).
 
-<img width="321" alt="layers" src="https://github.com/Tarynfo1/deep-learning-challenge/blob/93f19fb58d6f909f8219301b513a036b9659d861/Resources/layers1.png"><br><br>
+<img width="360" alt="layers" src="https://github.com/Tarynfo1/deep-learning-challenge/blob/93f19fb58d6f909f8219301b513a036b9659d861/Resources/layers1.png"><br><br>
 
-477 parameters were created by a three-layer training model, the first try show accuracy just above 73%, sitting just under 75%:
-<img width="321" alt="results73" src="https://github.com/Tarynfo1/deep-learning-challenge/blob/93f19fb58d6f909f8219301b513a036b9659d861/Resources/Results73.png"><br><br>
+477 parameters were created by a three-layer training model, the first try show accuracy just above 73%, sitting just under 75%:<br>
+<img width="360" alt="results73" src="https://github.com/Tarynfo1/deep-learning-challenge/blob/93f19fb58d6f909f8219301b513a036b9659d861/Resources/Results73.png"><br><br>
 
 
 ### Optimization results
 
-The optimisation performance included the NAME column included in the dataset and achieved an accuracy of 79% percent which is _4% over the target_ with 3298 parameters.
-<img width="321" alt="results79" src="https://github.com/Tarynfo1/deep-learning-challenge/blob/93f19fb58d6f909f8219301b513a036b9659d861/Resources/results79.png"><br><br>
+The optimisation performance included the NAME column included in the dataset and achieved an accuracy of 79% percent which is _4% over the target_ with 3298 parameters.<br>
+
+
+<img width="360" alt="results79" src="https://github.com/Tarynfo1/deep-learning-challenge/blob/93f19fb58d6f909f8219301b513a036b9659d861/Resources/results79.png"><br><br>
 
 ### Recommendation
 Given that multiple layers learn how to predict and classify information based on filtering inputs through layers, it is recommended to use them for deep learning models.
